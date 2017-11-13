@@ -1,0 +1,21 @@
+{{#paper-toolbar class="md-whiteframe-1dp" as |toolbar|}}
+    {{#toolbar.tools}}
+        {{#paper-sidenav-toggle as |toggleAction|}}
+            {{#paper-button class="hide-gt-sm" onClick=(action toggleAction) iconButton=true}}
+                {{paper-icon "menu"}}
+            {{/paper-button}}
+        {{/paper-sidenav-toggle}}
+        {{yield}}
+        <h2>
+            {{#if isDemo}}
+                Components {{paper-icon "chevron-right" }}
+            {{else  if isLayout}}
+               Layout {{paper-icon "chevron-right"}}
+            {{/if}}
+            {{pageTitle}}
+            {{#if isWIP}}
+                {{paper-icon "warning"  title="Not update yet"}}
+            {{/if}}
+        </h2>
+    {{/toolbar.tools}}
+{{/paper-toolbar}}

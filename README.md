@@ -1,5 +1,14 @@
 # zh-ember-paper
 
+## 使用 ember-paper 
+练习使用这个插件，熟悉这个插件，先来个小目标。把它的文档实现一遍，并中文化。
+
+## 使用的环境依赖 
+* ember 2.16
+* yarn 1.3.2
+* spacemacs
+* chrome 
+
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
 

@@ -1,5 +1,25 @@
 {{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
 {{!-- Feel free to remove this! --}}
+<hr>
+{{#paper-sidenav-container class="site-nav-container" }}
+    {{#paper-sidenav class="site-sidenav"}}
+        {{#paper-toolbar tall=true class="side-content-toolbar"}}
+            <div class="logo layout-column center layout-align-center-center">
+                 <img src="ember-logo-white.png">
+                 <div>paper</div>
+            </div>
+        {{/paper-toolbar}}
+        {{#paper-content padding=true }}
+            {{#paper-list}}
+                {{#menu-item active=(is-active "index" currentRouteName) href=(href-to "index") }}
+                    引言
+                {{/menu-item}}
+            {{/paper-list}}
+        {{/paper-content}}
+    {{/paper-sidenav}}
+    <div id="main" class="layout-column" tabindex="-1" role="main">
+         {{outlet}}
+    </div>
+{{/paper-sidenav-container}}
 
-{{outlet}}
+{{paper-toaster parent="#main" }}
