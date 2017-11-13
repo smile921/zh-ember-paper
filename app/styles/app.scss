@@ -87,3 +87,11 @@ md-sidenav.site-sidenav {
         margin-top: 0;
     }
 }
+
+md-toolbar.md-default-theme.page-main-toolbar {
+    background-color: #f5f5f5;
+    color: rgba(0,0,0,0.87);
+    width: 100%;
+    min-height: 64px;
+    z-index: 2;
+}
