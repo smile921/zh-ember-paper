@@ -42,7 +42,7 @@
                     {{/liquid-if}}
                 </div>
                 {{#menu-item active=(is-active "forms" currentRouteName) href=(href-to "forms")}}表单{{/menu-item}}
-                {{#menu-item active=(is-active "typography" currentRouteName) href=(href-to "typography")}}Typography{{/menu-item}}
+                {{#menu-item active=(is-active "typography" currentRouteName) href=(href-to "typography")}}排版{{/menu-item}}
                 {{#menu-item active=(is-active "theme" currentRouteName) href=(href-to "theme")}}颜色 & 主题{{/menu-item}}
 
                 {{#menu-item onClick=(action "toggleExpandedItem" "layout") expanded=layoutExpanded canExpand=true}}布局{{/menu-item}}
