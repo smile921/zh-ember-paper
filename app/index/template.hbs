@@ -2,6 +2,17 @@
 {{#paper-content scroll-y=true class="layout-padding"}}
     <div class="doc-content">
         <h2>欢迎来到 ember paper </h2>
+        <p>这个项目主要是为了把 Google 的 Material Design 带到 Ember中使用。该项目尽量可能多的把它的各种特性都封装成 Ember的组件。这个项目最终会打包成 Ember的一个 插件。</p>
+        <h2>安装</h2>
+        <p>执行下面的脚本进行安装</p>
+        <p>
+            {{code-snippet name="install.sh"}}
+            <span>这里使用了ember-code-snippet 插件</span>
+        </p>
+        <p>这将会自动创建一个scss文件，该文件会放在 <code>app/styles/app.scss</code> 文件中会有自动导入 <code>@import 'ember-paper'</code> 并安装 ember-cli-sass </p>
+        <p>Scss 是 Ember paper的很重要的一部分。你可以使用 sass 类覆盖默认的变量，这样很容易改变 ember paper的 默认设置。</p>
+        <p>这样在你的应用和组件内所有的ember paper组件和样式都将是可用的.</p>
+        <p>在文档的查找来学习理解怎么使用各个组件。</p>
     </div>
 {{/paper-content}}
 {{outlet}}

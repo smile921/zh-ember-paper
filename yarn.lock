@@ -1261,6 +1261,15 @@ broccoli-filter@^1.2.2, broccoli-filter@^1.2.3, broccoli-filter@^1.2.4:
     symlink-or-copy "^1.0.1"
     walk-sync "^0.3.1"
 
+broccoli-flatiron@^0.0.0:
+  version "0.0.0"
+  resolved "http://registry.npm.taobao.org/broccoli-flatiron/download/broccoli-flatiron-0.0.0.tgz#e97504016b56eea04813b5d862fda18b6f11a77f"
+  dependencies:
+    broccoli-kitchen-sink-helpers "~0.2.4"
+    broccoli-writer "~0.1.1"
+    mkdirp "^0.3.5"
+    rsvp "~3.0.6"
+
 broccoli-funnel-reducer@^1.0.0:
   version "1.0.0"
   resolved "http://registry.npm.taobao.org/broccoli-funnel-reducer/download/broccoli-funnel-reducer-1.0.0.tgz#11365b2a785aec9b17972a36df87eef24c5cc0ea"
@@ -1302,7 +1311,7 @@ broccoli-funnel@^2.0.0:
     symlink-or-copy "^1.0.0"
     walk-sync "^0.3.1"
 
-broccoli-kitchen-sink-helpers@^0.2.5, broccoli-kitchen-sink-helpers@~0.2.0:
+broccoli-kitchen-sink-helpers@^0.2.0, broccoli-kitchen-sink-helpers@^0.2.5, broccoli-kitchen-sink-helpers@~0.2.0, broccoli-kitchen-sink-helpers@~0.2.4:
   version "0.2.9"
   resolved "http://registry.npm.taobao.org/broccoli-kitchen-sink-helpers/download/broccoli-kitchen-sink-helpers-0.2.9.tgz#a5e0986ed8d76fb5984b68c3f0450d3a96e36ecc"
   dependencies:
@@ -1438,6 +1447,14 @@ broccoli-sri-hash@^2.1.0:
     sri-toolbox "^0.2.0"
     symlink-or-copy "^1.0.1"
 
+broccoli-static-compiler@^0.1.4:
+  version "0.1.4"
+  resolved "http://registry.npm.taobao.org/broccoli-static-compiler/download/broccoli-static-compiler-0.1.4.tgz#713d18f08eb3131530575a0c5ad2951bba10af41"
+  dependencies:
+    broccoli-kitchen-sink-helpers "^0.2.0"
+    broccoli-writer "^0.1.1"
+    mkdirp "^0.3.5"
+
 broccoli-stew@^1.2.0, broccoli-stew@^1.3.3, broccoli-stew@^1.5.0:
   version "1.5.0"
   resolved "http://registry.npm.taobao.org/broccoli-stew/download/broccoli-stew-1.5.0.tgz#d7af8c18511dce510e49d308a62e5977f461883c"
@@ -1471,7 +1488,7 @@ broccoli-uglify-sourcemap@^2.0.0:
     uglify-es "^3.1.3"
     walk-sync "^0.3.2"
 
-broccoli-writer@~0.1.1:
+broccoli-writer@^0.1.1, broccoli-writer@~0.1.1:
   version "0.1.1"
   resolved "http://registry.npm.taobao.org/broccoli-writer/download/broccoli-writer-0.1.1.tgz#d4d71aa8f2afbc67a3866b91a2da79084b96ab2d"
   dependencies:
@@ -2454,6 +2471,17 @@ ember-cli@~2.16.2:
     walk-sync "^0.3.0"
     yam "0.0.22"
 
+ember-code-snippet@^2.0.0:
+  version "2.0.0"
+  resolved "http://registry.npm.taobao.org/ember-code-snippet/download/ember-code-snippet-2.0.0.tgz#79e006c982411dc7eb21bf5a51feb66cd36d7f3b"
+  dependencies:
+    broccoli-flatiron "^0.0.0"
+    broccoli-merge-trees "^1.0.0"
+    broccoli-static-compiler "^0.1.4"
+    broccoli-writer "^0.1.1"
+    es6-promise "^1.0.0"
+    glob "^4.0.4"
+
 ember-composability-tools@0.0.8:
   version "0.0.8"
   resolved "http://registry.npm.taobao.org/ember-composability-tools/download/ember-composability-tools-0.0.8.tgz#9122e743c0aed759da7f20f3d5a9711a51bac619"
@@ -2820,6 +2848,10 @@ es6-map@^0.1.4:
     es6-set "~0.1.5"
     es6-symbol "~3.1.1"
     event-emitter "~0.3.5"
+
+es6-promise@^1.0.0:
+  version "1.0.0"
+  resolved "http://registry.npm.taobao.org/es6-promise/download/es6-promise-1.0.0.tgz#f90d3629faa7c26166ae4df77c89bacdeb8dca7f"
 
 es6-set@~0.1.5:
   version "0.1.5"
@@ -3434,6 +3466,15 @@ glob@7.1.1:
     minimatch "^3.0.2"
     once "^1.3.0"
     path-is-absolute "^1.0.0"
+
+glob@^4.0.4:
+  version "4.5.3"
+  resolved "http://registry.npm.taobao.org/glob/download/glob-4.5.3.tgz#c6cb73d3226c1efef04de3c56d012f03377ee15f"
+  dependencies:
+    inflight "^1.0.4"
+    inherits "2"
+    minimatch "^2.0.1"
+    once "^1.3.0"
 
 glob@^5.0.10, glob@^5.0.15:
   version "5.0.15"
@@ -4700,7 +4741,7 @@ mimic-fn@^1.0.0:
   dependencies:
     brace-expansion "^1.1.7"
 
-minimatch@^2.0.3:
+minimatch@^2.0.1, minimatch@^2.0.3:
   version "2.0.10"
   resolved "http://registry.npm.taobao.org/minimatch/download/minimatch-2.0.10.tgz#8d087c39c6b38c001b97fca7ce6d0e1e80afbac7"
   dependencies:

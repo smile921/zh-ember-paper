@@ -5,6 +5,9 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
+      includeHighlightJs: true,
+      snippetPaths:['app/snippets'],
+      snippetSearchPaths: ['app','app/snippets']
     // Add options here
   });
 
@@ -21,5 +24,8 @@ module.exports = function(defaults) {
   // please specify an object with the list of modules as keys
   // along with the exports of each module as its value.
 
+    //app.import('vendor/highlight.pack.js',{
+    //    using: [{transformation: 'amd', as: 'highlinght.js'}]
+    //})
   return app.toTree();
 };
