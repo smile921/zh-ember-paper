@@ -6,8 +6,8 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
       includeHighlightJs: true,
-      snippetPaths:['app/snippets'],
-      snippetSearchPaths: ['app','app/snippets']
+      snippetPaths:['snippets'],
+      snippetSearchPaths: ['app','snippets']
     // Add options here
   });
 

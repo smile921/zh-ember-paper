@@ -13,6 +13,27 @@
         <p>Scss 是 Ember paper的很重要的一部分。你可以使用 sass 类覆盖默认的变量，这样很容易改变 ember paper的 默认设置。</p>
         <p>这样在你的应用和组件内所有的ember paper组件和样式都将是可用的.</p>
         <p>在文档的查找来学习理解怎么使用各个组件。</p>
+        <h2>内容安全策略</h2>
+        <p>这些在新版本的 ember app中已经不需要了。但是，如果你需要，这是一些指引。Ember Paper 使用 Google 字体 ，所以一些字体的连接需要加入到白名单。你可以在 <code>config/environment.js</code> 中加上内容安全策略的设置 ，像这样：</p>
+        {{code-snippet name="content-security-policy.js"}}
+        <p>你可以在下面的页面中找到更多的插件的CSP 相关信息 <a href="https://github.com/rwjblue/ember-cli-content-security-policy#ember-cli-content-security-policy" >这里</a> 。我们还得运行 data 中的 img-src 因为 当前的按钮样式的 <a href="https://github.com/angular/material/blob/v1.1.4/src/components/button/button.scss#L123">hack</a></p>
+        <h2>可选项</h2>
+        <p>Ember paper 这次下面的两个可选项，可以在 ember-cli-build.js 中设置：</p>
+        <dl>
+            <dt><code>ENV['autoprefixer']</code> (defaults to <code>{ browsers: ['last 2 versions'] }</code>)</dt>
+            <dd>
+                默认的 ember-paper 将会在样式文件上运行 <a href="https://github.com/postcss/autoprefixer">autoprefixer</a> .
+                这个选项将运行你覆盖默认的 autoprefixer 目标。
+            </dd>
+            <dt><code>ENV['ember-paper'].insertFontLinks</code> (defaults to <code>true</code>)</dt>
+            <dd>
+                目标app可以指定这个选项阻止插入Google 字体链接。如果你使用自己的字体这将非常有用。
+            </dd>
+        </dl>
+        <h2>贡献</h2>
+        <p>这是一个非常有雄心的项目。Google的设计原则是非常可扩展的且非盈利的实现。你可以实现或者修复几个组件。请发起pull request 或者在Github上发issue 或者加入slack讨论组。查看readme来发现更多资料。</p>
+        <p>这各位的帮助下，我们可以优雅的把这个诱人的设计模块化的带到ember中，以ember的方式， the ember way！</p>
+        <p><strong> 在 Github 上帮助我们 ！</strong></p>
     </div>
 {{/paper-content}}
 {{outlet}}
