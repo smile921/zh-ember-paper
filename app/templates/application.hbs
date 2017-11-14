@@ -41,22 +41,22 @@
                         {{#submenu-item active=(is-active "demo.virtual-repeat" currentRouteName) href=(href-to "demo.virtual-repeat")}}Virtual Repeat{{/submenu-item}}
                     {{/liquid-if}}
                 </div>
-                {{#menu-item active=(is-active "forms" currentRouteName) href=(href-to "forms")}}Forms{{/menu-item}}
+                {{#menu-item active=(is-active "forms" currentRouteName) href=(href-to "forms")}}表单{{/menu-item}}
                 {{#menu-item active=(is-active "typography" currentRouteName) href=(href-to "typography")}}Typography{{/menu-item}}
-                {{#menu-item active=(is-active "theme" currentRouteName) href=(href-to "theme")}}Color & Theme{{/menu-item}}
+                {{#menu-item active=(is-active "theme" currentRouteName) href=(href-to "theme")}}颜色 & 主题{{/menu-item}}
 
-                {{#menu-item onClick=(action "toggleExpandedItem" "layout") expanded=layoutExpanded canExpand=true}}Layout{{/menu-item}}
+                {{#menu-item onClick=(action "toggleExpandedItem" "layout") expanded=layoutExpanded canExpand=true}}布局{{/menu-item}}
                 <div class="submenu">
                     {{#liquid-if layoutExpanded}}
-                        {{#submenu-item active=(is-active "layout.introduction" currentRouteName) href=(href-to "layout.introduction")}}Introduction{{/submenu-item}}
-                        {{#submenu-item active=(is-active "layout.layout-containers" currentRouteName) href=(href-to "layout.layout-containers")}}Layout Containers{{/submenu-item}}
-                        {{#submenu-item active=(is-active "layout.layout-children" currentRouteName) href=(href-to "layout.layout-children")}}Layout Children{{/submenu-item}}
-                        {{#submenu-item active=(is-active "layout.child-alignment" currentRouteName) href=(href-to "layout.child-alignment")}}Child Alignment{{/submenu-item}}
+                        {{#submenu-item active=(is-active "layout.introduction" currentRouteName) href=(href-to "layout.introduction")}}简介{{/submenu-item}}
+                        {{#submenu-item active=(is-active "layout.layout-containers" currentRouteName) href=(href-to "layout.layout-containers")}}容器布局{{/submenu-item}}
+                        {{#submenu-item active=(is-active "layout.layout-children" currentRouteName) href=(href-to "layout.layout-children")}}子元素布局{{/submenu-item}}
+                        {{#submenu-item active=(is-active "layout.child-alignment" currentRouteName) href=(href-to "layout.child-alignment")}}子元素对齐{{/submenu-item}}
                     {{/liquid-if}}
                 </div>
 
-                {{#menu-item active=(is-active "cookbook" currentRouteName) href=(href-to "cookbook")}}Cookbook{{/menu-item}}
-                {{#menu-item active=(is-active "addons" currentRouteName) href=(href-to "addons")}}Addons{{/menu-item}}
+                {{#menu-item active=(is-active "cookbook" currentRouteName) href=(href-to "cookbook")}}食谱{{/menu-item}}
+                {{#menu-item active=(is-active "addons" currentRouteName) href=(href-to "addons")}}插件{{/menu-item}}
                 
             {{/paper-list}}
         {{/paper-content}}
