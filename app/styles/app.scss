@@ -21,7 +21,7 @@ body {
 }
 
 .side-content-toolbar{
-    background-color: linear-gradient(to-bottom,#f4511e,#ff7043);
+    background-color: linear-gradient(to-bottom,#f4511e,#42a5f5);
     color:#fff;
     height:180px;
     border-bottom: 1px solid rgba(255,255,255,0.1);
@@ -29,6 +29,9 @@ body {
 }
 .site-sidenav > * {
     min-height: 218px;
+}
+md-toolbar.md-default-theme:not(.md-menu-toolbar), md-toolbar:not(.md-menu-toolbar) {
+    background-color: #5f8def;
 }
 md-sidenav.site-sidenav {
     background-color: #42a5f5;
