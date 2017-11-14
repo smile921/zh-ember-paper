@@ -3,6 +3,8 @@
 ## 使用 ember-paper 
 练习使用这个插件，熟悉这个插件，先来个小目标。把它的文档实现一遍，并中文化。
 
+## 首页效果
+![https://github.com/smile921/zh-ember-paper/raw/master/public/img/firstpage.png](https://github.com/smile921/zh-ember-paper/raw/master/public/img/firstpage.png)
 ## 使用的环境依赖 
 * ember 2.16
 * yarn 1.3.2
