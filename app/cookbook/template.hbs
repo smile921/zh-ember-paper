@@ -1,1 +1,16 @@
-{{outlet}}
+{{page-toolbar pageTitle="小贴士" isDemo=false}}
+
+{{#paper-content class="md-padding"}}
+<div class="doc-content">
+  <h3>隐藏 <code>\{{paper-input}}</code> 字符计数</h3>
+  <p>
+    Material Design <a href="https://material.google.com/components/text-fields.html#text-fields-character-counter">requires that a character count is displayed</a> for input elements which have a length restriction. However, when forms have many input elements, some may prefer to display the count only when the element is focused or invalid. This CSS achieves this.
+  </p>
+  {{code-snippet name="cookbook.no-char-count.scss"}}
+  <h3>贡献小贴士或者小技巧</h3>
+  <p>
+    有一个好的技巧或解决方案 <code>ember-paper</code>?  在这里<a href="https://github.com/miguelcobain/ember-paper/pulls">提交一个pull request</a> 
+    在 GitHub 或者 和 <a href="https://embercommunity.slack.com/messages/e-paper/"> Slack #e-paper</a> 团队讨论
+  </p>
+</div>
+{{/paper-content}}
