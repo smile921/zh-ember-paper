@@ -10,6 +10,18 @@
 * yarn 1.3.2
 * spacemacs
 * chrome 
+## ember 学习手札
++ application
+  + customEvents
+  + eventDispatcher
+  + resolver
+  + rootElement
+  * DOMContentReady 
+  * deferReadiness()
+  * advanceReadiness()
+  * ready() to setup a router
++ initializer
++ InstanceInitializer 在所有的 initializer 之后执行
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.

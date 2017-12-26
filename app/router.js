@@ -45,6 +45,8 @@ Router.map(function() {
     this.route('layout-children');
     this.route('child-alignment');
   });
+  this.route('ddau');
+  this.route('topic');
 });
 
 export default Router;

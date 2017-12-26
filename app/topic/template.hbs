@@ -1,0 +1,10 @@
+{{outlet}}
+<hr>
+{{#paper-content}}
+    {{#topic-list users=model.users topics=model.topic_list.topics}} 
+
+    {{/topic-list}}
+    {{#loading-spinner loadingMore=(action 'loadingMore') }}
+    {{/loading-spinner}}
+
+{{/paper-content}}

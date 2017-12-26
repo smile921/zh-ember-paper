@@ -1,0 +1,13 @@
+<h2>form ddau component </h2>
+<hr>
+{{#each data.data as |item index|}}
+    <div class="item">
+        <span>{{item.name}}</span>
+    </div>
+{{/each}}
+<p class="md" {{action "exchangeComId"}} > {{comId}} </p>
+<p {{action "nextPager"}}> route next page </p>
+<p {{action "nextPage"}}> next page </p>
+<p {{action "nextPage2"}}> next page 2 </p>
+{{yield (hash nextPage=nextPage)}}
+<p>props : {{props}}, props1 : {{props1}} , props2 : {{props2}}</p>
