@@ -12,6 +12,8 @@ export default Controller.extend({
     actions: {
         loadingMore() {
             debug('loading more from controller');
+            debug('page ' + this.get('page'));
+            this.set('page', 1 + this.get('page'));
         }
     }
 });

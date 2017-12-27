@@ -5,6 +5,11 @@ import inject from 'ember-service/inject';
 import { debug } from '@ember/debug';
 
 export default Route.extend({
+    queryParams: {
+        page: {
+            refreshModel: true
+        }
+    },
     ajax: inject(),
     model(queryParams) { //no_definitions=true&no_subcategories=false&order=default&page=1&_=1514267095609
         let base = "http://127.0.0.1/discourse";
