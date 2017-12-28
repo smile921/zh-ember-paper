@@ -72,3 +72,8 @@ Specify what it takes to deploy your app.
 * Development Browser Extensions
   * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
   * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
+
+## Ember DDAU 笔记
+*  action 定义在 component 可以直接在 template中使用 action 即可
+*  action 定义在 controller 中，需要在 route的template 中使用 component是作为action 传递到组件 actionName=(action 'actionName'),在组件中使用时可以直接this.sendAction('actionName',parmas);
+*  action 定义在 route 中，不能直接在route的template 中使用，也不需要显示的向下传递，在组件中可以直接定义 一个属性 actionName:'actionName',组件就可以直接this.sendAction('actionName',params);
