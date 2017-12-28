@@ -14,10 +14,10 @@ export default Route.extend({
         return data;
     },
     actions: {
-        nextPager() {
+        routeNextPage() {
             debug('action up demo in route');
         },
-        nextPage2() {
+        RouteNextPage2() {
             debug('action in toute next page 2')
         }
     }

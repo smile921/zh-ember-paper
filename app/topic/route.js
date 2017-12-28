@@ -16,6 +16,7 @@ export default Route.extend({
         let path = '/latest.json';
         // RSVP.hash({});
         debug(queryParams);
+        debug('controller.model: ' + this.get('controller.model'));
         // this.store.query(path, queryParams);
         let q = this.get('buildQueryParams')(queryParams);
         return this.get('ajax').request(base + path + q);

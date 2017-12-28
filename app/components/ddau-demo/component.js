@@ -6,6 +6,7 @@ export default Component.extend({
     comId: 'ddau-component',
     // nextPagec: null,
     // nextPage2: null,
+    routeNext: 'routeNextPage',
     props: null,
     actions: {
         exchangeComId() {
@@ -27,6 +28,11 @@ export default Component.extend({
         nextPage2() {
             debug('next page 2 in component' + this.get('nextPage2'));
             this.sendAction('nextPage2');
+        },
+        routeNextPage() {
+            debug('component action call route Next page');
+            this.sendAction('routeNext');
         }
+
     }
 }).reopenClass({ 'positionalParams': ['nextPagec'] });
