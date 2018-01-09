@@ -23,7 +23,7 @@
     dashes. See the table below for an overview of the most important classes.
   </p>
 {{!--  --}}
-  {{!-- paper-api
+  {{paper-api
     (p-section
       (p-row "layout" "`row | column`" "`layout-row`, `layout-column`")
       (p-row "flex" "integer (increments of 5 for 0%->100%, 100%/3, 200%/3)" "`layout`, `flex-50`")
@@ -40,14 +40,14 @@
     )
     header=(p-row "Base attribute" "Parameter values" "Examples")
     sort=false
-  --}}
+  }}
 
   <p>
     We can associate breakpoints with mediaQuery definitions using breakpoint <strong>alias(es)</strong>,
     based on the breakpoints specified in the Material Design spec:
   </p>
 
-  {{!-- paper-api
+  {{paper-api
     (p-section
       (p-row "xs" "'(max-width: *599*px)'")
       (p-row "gt-xs" "'(min-width: *600*px)'")
@@ -61,7 +61,7 @@
     )
     header=(p-row "Breakpoint" "Media query (pixel range)")
     sort=false
-  --}}
+  }}
 
   <h3>API with Responsive Breakpoints</h3>
   <p>
@@ -72,7 +72,7 @@
     This notation results in, for example, the following table for the layout and flex classes:
   </p>
 
-  {{!-- paper-api
+  {{paper-api
     (p-section
       (p-row "layout" "`flex`" "Sets the default layout direction & flex unless overriden by another breakpoint.")
       (p-row "layout-xs" "`flex-xs`"       "width < *600*px")
@@ -87,7 +87,7 @@
     )
     header=(p-row "layout class" "flex class" "Description")
     sort=false
-  --}}
+  }}
 
   <p>Below is an example of the usage of the responsive layout classes:</p>
 
