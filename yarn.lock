@@ -2600,6 +2600,13 @@ ember-maybe-import-regenerator@^0.1.5:
     ember-cli-babel "^6.0.0-beta.4"
     regenerator-runtime "^0.9.5"
 
+ember-native-dom-helpers@^0.5.10:
+  version "0.5.10"
+  resolved "http://registry.npm.taobao.org/ember-native-dom-helpers/download/ember-native-dom-helpers-0.5.10.tgz#9c7172e4ddfa5dd86830c46a936e2f8eca3e5896"
+  dependencies:
+    broccoli-funnel "^1.1.0"
+    ember-cli-babel "^6.6.0"
+
 ember-native-dom-helpers@^0.5.4:
   version "0.5.4"
   resolved "http://registry.npm.taobao.org/ember-native-dom-helpers/download/ember-native-dom-helpers-0.5.4.tgz#0bc1506a643fb7adc0abf1d09c44a7914459296b"

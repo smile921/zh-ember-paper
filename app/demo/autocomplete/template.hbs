@@ -1,1 +1,98 @@
-{{outlet}}
+{{page-toolbar pageTitle="自动补全" isDemo=true}}
+
+{{#doc-content class="demo-autocomplete scroll-y-auto"}}
+    {{#paper-card}}
+    {{#paper-card-content}}
+        <h2>基本用法</h2>
+        <blockquote>
+            使用
+            <code>\{{paper-autocomplete}}</code>
+            来搜索匹配的数据
+        </blockquote>
+        {{! BEGIN-SNIPPET autocomplete.basic-usage}}
+        {{#paper-autocomplete 
+            disable=firstDisabled
+            onCreate=(action "addCountry")
+            options=items
+            allowClear=true 
+            searchText=(readonly countrySearchText)
+            onSearchTextChange=(action (mut countrySearchText))
+            selected=selectedCountry
+            search=(if simulateQuery (action "searchCountries"))
+            searchField="name"
+            labelPath="name"
+            placeholder="select a country ..."
+            loadingMessage="Searching countries ..."
+            noMatchesMessage="Oops this country doesn't exist."
+            onSelectionChange=(action (mut selectedCountry)) as |country autocomplete|}}
+            {{paper-autocomplete-highlight 
+            label=country.name
+            searchText=autocomplete.searchText
+            flags="i"}}
+        {{/paper-autocomplete}}
+        {{! END-SNIPPET}}
+        <p>
+            {{#if selectedCountry}}
+                selected country is {{selectedCountry.name}}  {{selectedCountry.code}}
+            {{else}}
+                什么也没选...
+            {{/if}}
+        </p>
+        {{#paper-checkbox 
+            value=firstDisabled
+            onChange=(action (mut firstDisabled))
+            }}
+        禁用的输入框
+        {{/paper-checkbox}}
+
+        {{#paper-checkbox 
+            value=simulateQuery
+            onChange=(action (mut simulateQuery))
+            }}
+            模拟查询
+        {{/paper-checkbox}}
+        
+        <h3>模板</h3>
+        {{code-snippet name="autocomplete.basic-usage.hbs"}}
+    {{/paper-card-content}}
+    {{/paper-card}}
+
+    {{#paper-card}}
+        {{#paper-card-content}}
+            <h2>自定义模板块儿</h2>
+            <blockquote>
+                使用自定义模板显示
+                <code>\{{paper-autocomplete}}</code>
+                的自定义样式和结果
+            </blockquote>
+            {{!-- searchText=(readonly templateSearchText) --}}
+            {{! BEGIN_SNIPPET autocomplete.block-custom-templete}}
+            {{#paper-autocomplete
+                placeholder="Type e.g. emebr , paper, one, two, etc"
+                options=arrayOFItems
+                selected=selectedItem
+                onSelectionChange=(action (mut selectedItem))
+                as |item term|
+                }}
+                <span class="item-title">
+                    {{paper-icon "start"}}
+                    <span>
+                        {{paper-autocomplete-highlight searchText=term.searchText flags="i" label=item}}
+
+                    </span>
+                </span>
+                {{else}}
+                Whoops! Could not find!
+            {{/paper-autocomplete}}
+            {{! END-SNIPPET }}
+
+            <p>
+                selected {{if selectedItem selectedItem "None"}}
+
+                <h3>模板</h3>
+                {{code-snippet name="autocomplete.block-custom-template.hbs"}}
+            </p>
+        {{/paper-card-content}}
+    {{/paper-card}}
+
+{{/doc-content}}
