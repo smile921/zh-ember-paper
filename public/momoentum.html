@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Momentum</title>
+    <style type="text/css">
+        body {
+            background: #fff;
+            font-size: 90%;
+            min-height: 100%;
+            margin: 0;
+            overflow: hidden;
+            text-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        #background {
+            background-size: cover;
+            background-color: transparent;
+            background-position: center center;
+            background-repeat: no-repeat;
+            transition: transform .3s ease-out;
+            z-index: 1;
+        }
+        
+        #background {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ol,
+        ul {
+            list-style: none;
+        }
+        
+        .widget {
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 10;
+        }
+        
+        .fadein,
+        .background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 1;
+        }
+        
+        .fadein {
+            /* opacity: 0; */
+            -webkit-animation: fadein .5s ease-out 0s forwards;
+            background: url('./bg.jpg');
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul id="background" class="background">
+        <li class="fadein"></li>
+    </ul>
+    <div class="widget">
+        <h1>Hello Momentum</h1>
+    </div>
+
+</body>
+
+</html>

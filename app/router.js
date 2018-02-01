@@ -47,6 +47,7 @@ Router.map(function() {
   });
   this.route('ddau');
   this.route('topic');
+  this.route('zswagger');
 });
 
 export default Router;
